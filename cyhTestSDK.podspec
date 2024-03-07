@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "cyhTestSDK"
-  spec.version      = "1.1"
+  spec.version      = "1.3"
   spec.summary      = "A short description of cyhTestSDK."
 
   # This description is used to generate tags and improve search results.
@@ -24,8 +24,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "cyh for ios."
 
   spec.homepage     = "https://github.com/714627034/podSubmodule"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -38,7 +37,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -52,7 +51,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "chenyaohuang" => "chenyaohuang@baidu.com" }
+  spec.author             = { "2574638208" => "2574638208@qq.com" }
   # Or just: spec.author    = "chenyaohuang"
   # spec.authors            = { "chenyaohuang" => "chenyaohuang@baidu.com" }
   # spec.social_media_url   = "https://twitter.com/chenyaohuang"
@@ -79,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/714627034/podSubmodule.git", :tag => "1.1" }
+  spec.source       = { :git => "https://github.com/714627034/podSubmodule.git", :tag => "1.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +88,7 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files  = "a/**", "b/**"
 
   spec.subspec 'SDK_vip' do |evernote|
     evernote.source_files = 'a/**'
