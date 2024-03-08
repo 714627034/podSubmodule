@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "cyhTestSDK"
-  spec.version      = "1.5"
+  spec.version      = "1.7"
   spec.summary      = "A short description of cyhTestSDK."
 
   # This description is used to generate tags and improve search results.
@@ -63,7 +63,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/714627034/podSubmodule.git", :tag => "1.5" }
+  spec.source       = { :git => "https://github.com/714627034/podSubmodule.git", :tag => "1.7" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,14 +88,14 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  spec.source_files  = "a/**", "b/**"
+  spec.source_files  = "c/**"
 
   spec.subspec 'SDK_vip' do |evernote|
-    evernote.source_files = 'a/**'
+    evernote.source_files = 'b/**'
   end
 
   spec.subspec 'SDK_general' do |evernote|
-    evernote.source_files = 'b/**'
+    evernote.source_files = 'a/**'
   end
 
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
