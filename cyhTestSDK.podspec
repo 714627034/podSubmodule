@@ -101,7 +101,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'SDK_ad' do |s|
-    s.source_files = 'a/*'
+    s.source_files = 'c/*'
     s.frameworks   = 'CoreLocation', 'SystemConfiguration', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'AdSupport', 'SystemConfiguration', 'QuartzCore', 'WebKit', 'MessageUI','SafariServices','AVFoundation','EventKit','QuartzCore','CoreMedia','StoreKit'
     s.libraries    = 'c++'
     s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
