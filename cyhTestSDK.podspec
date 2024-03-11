@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "cyhTestSDK"
-  spec.version      = "1.7"
+  spec.version      = "1.8"
   spec.summary      = "A short description of cyhTestSDK."
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/714627034/podSubmodule.git", :tag => "1.7" }
+  spec.source       = { :git => "https://github.com/714627034/podSubmodule.git", :tag => "1.8" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,14 +88,23 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  spec.source_files  = "c/**"
+  spec.source_files  = "a/*"
 
   spec.subspec 'SDK_vip' do |evernote|
-    evernote.source_files = 'b/**'
+    evernote.source_files = 'b/**/*'
+    evernote.libraries    = 'c++'
+    evernote.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   end
 
   spec.subspec 'SDK_general' do |evernote|
-    evernote.source_files = 'a/**'
+    evernote.source_files = 'a/*'
+  end
+
+  spec.subspec 'SDK_ad' do |s|
+    s.source_files = 'a/*'
+    s.frameworks   = 'CoreLocation', 'SystemConfiguration', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'AdSupport', 'SystemConfiguration', 'QuartzCore', 'WebKit', 'MessageUI','SafariServices','AVFoundation','EventKit','QuartzCore','CoreMedia','StoreKit'
+    s.libraries    = 'c++'
+    s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   end
 
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
