@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "cyhTestSDK"
-  spec.version      = "1.9"
+  spec.version      = "2.1"
   spec.summary      = "A short description of cyhTestSDK."
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/714627034/podSubmodule.git", :tag => "1.9", :submodules => true }
+  spec.source       = { :git => "https://github.com/714627034/podSubmodule.git", :tag => "2.1", :submodules => true }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
